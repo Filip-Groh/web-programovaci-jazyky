@@ -1,0 +1,176 @@
+:root {
+    --background: #090604;
+    --text: #00bbea;
+    --primary: #f8ec00;
+    --active: #ff0000;
+
+    --base-100: color-mix(
+        in srgb,
+        var(--background) 90%,
+        white
+    );
+    --base-200: color-mix(
+        in srgb,
+        var(--background) 85%,
+        white
+    );
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--primary);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+article {
+    background-color: var(--base-100);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+p {
+    line-height: 1.6;
+    padding-left: 1rem;
+}
+
+ol>li {
+    margin: 1rem;
+}
+
+strong {
+    color: var(--primary)
+}
+
+ol>li::marker {
+    color: var(--primary)
+}
+
+section>h4 {
+    line-height: 0;
+    color: var(--text);
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+section>ul {
+    padding-left: 2rem;
+    list-style-position: inside;
+}
+
+li>h5 {
+    color: var(--text);
+    display: inline;
+    all: unset;
+}
+
+.article-menu>li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--base-200);
+    width: fit-content;
+    list-style-position: inside;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+}
+
+.page-footer {
+    text-align: center;
+    background-color: var(--base-100);
+    border-radius: 1rem;
+}
+
+.page-footer>p {
+    padding: 0.25rem;
+}
+
+article>footer {
+    background-color: var(--base-200);
+    text-align: center;
+    border-radius: 1rem;
+}
+
+article>footer>p {
+    padding: 0.25rem;
+}
+
+.svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.main-menu-button {
+    flex-basis: 25%;
+    list-style-type: none;
+    text-align: center;
+    background-color: var(--base-100);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.active {
+    color:var(--active);
+}
+
+table {
+    background-color: var(--base-200);
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+th {
+    color: var(--primary);
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: color-mix(
+        in srgb,
+        var(--base-200) 98%,
+        white
+    );
+    color: color-mix(
+        in srgb,
+        var(--text) 90%,
+        black
+    );
+}
+
+td:first-child {
+    width: 8%;
+}

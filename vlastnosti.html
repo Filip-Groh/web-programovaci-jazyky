@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"> 
+    <title>Programovací jazyky - Vlastnosti</title>
+</head>
+<body>
+    <header>
+        <h1>Programovací Jazyky</h1>
+        <nav>
+            <menu class="main-menu">
+                <li class="main-menu-button">
+                    <a href="./index.html">Přehled</a>
+                </li>
+                <li class="main-menu-button">
+                    <a href="./vlastnosti.html" class="active">Vlastnosti</a>
+                </li>
+                <li class="main-menu-button">
+                    <a href="./rozrazeni.html">Rozřazení</a>
+                </li>
+                <li class="main-menu-button">
+                    <a href="./seznam.html">Seznam</a>
+                </li>
+            </menu>
+        </nav>        
+    </header>
+
+
+    <main>
+        <article>
+            <header>
+                <h2>Vlastnosti programovacích jazyků</h2>
+                <nav>
+                    <menu class="article-menu">
+                        <li>
+                            <a href="#syntaxe">Syntaxe</a>
+                        </li>
+                        <li>
+                            <a href="#zpracovani">Kompilovaný / Interpretovaný</a>
+                        </li>
+                        <li>
+                            <a href="#vykon">Výkon</a>
+                        </li>
+                        <li>
+                            <a href="#zacatecnicke">Vhodné pro začátečníky</a>
+                        </li>
+                    </menu>
+                </nav>
+            </header>
+            <section id="syntaxe">
+                <h3>Syntaxe</h3>
+                <p>V programátorském světě je syntaxe jako jazyk, kterým hovoříme s počítačem. Každý programovací jazyk má svou vlastní syntaxi, která určuje, jak psát kód a jakým způsobem počítač rozumí našim instrukcím.</p>
+                <p>Představme si to jako různé dialekty v jazyce programování. Například jazyk Python je jako plynulý a příjemný hovor, kde jsou slova (kód) strukturována odsazením. Na druhou stranu, jazyk C++ je jako formální a přesná konverzace, kde je důležité, aby každé slovo (kód) bylo pečlivě zakončeno středníkem.</p>
+                <p>Syntaxe určuje, jak psát základní stavební bloky, jako jsou podmínky, smyčky a funkce. Je to jako gramatika v normálním jazyce - pokud nezapadáte do syntaxe, váš kód nebude fungovat, stejně jako špatně napsaná věta způsobí nedorozumění.</p>
+                <p>Některé jazyky mají syntaxi, která je intuitivní a snadno se učí, což může být lákavé pro začátečníky. Jiné jsou složitější, ale nabízejí větší flexibilitu a výkon pro pokročilé programátory.</p>
+                <p>Syntaxe programovacího jazyka je jeho identita - každý jazyk má své vlastní pravidla a konvence, které určují, jak se vyjadřovat. A právě jako různé jazyky nám umožňují vyjádřit různé myšlenky, různé syntaxe programovacích jazyků nám umožňují řešit různé problémy v informatice.</p>
+            </section>
+            <section id="zpracovani">
+                <h3>Kompilovaný / Interpretovaný</h3>
+                <p>Kompilované a interpretované programovací jazyky představují dva základní přístupy k provádění kódu. Kompilované jazyky, jako je C++ nebo Rust, a interpretované jazyky, jako je Python nebo JavaScript, mají odlišné způsoby zpracování a vykonávání kódu, což ovlivňuje jejich použití a chování.</p>
+                <p>V kompilovaných jazycích je zdrojový kód přeložen do strojového kódu pomocí kompilátoru. Tento proces přeměňuje zdrojový kód na spustitelný soubor, který může být spuštěn na cílovém počítači. Kompilace obvykle probíhá před spuštěním programu a výsledný strojový kód je optimalizován pro danou platformu. To může vést k rychlejšímu běhu programu a menší závislosti na interpretaci za běhu. Nicméně, při každé změně kódu je nutné znovu provést kompilaci.</p>
+                <p>Na druhou stranu interpretované jazyky provádějí kód přímo bez předchozí kompilace. Zdrojový kód je postupně čten a vykonáván interpretrem za běhu programu. Tento přístup umožňuje rychlou iteraci a ladění kódu, protože není nutné čekat na kompilaci. Interpretované jazyky jsou také často více přenositelné, protože interpret běží na různých platformách a není nutné kompilovat program pro každou z nich zvlášť. Nicméně, interpretovaný kód může být obvykle pomalejší než ekvivalentní kompilovaný kód, protože je vykonáván za běhu a není předem optimalizován.</p>
+                <p>Oba přístupy mají své výhody a nevýhody a vhodnost jednoho nebo druhého záleží na konkrétních požadavcích a omezeních projektu. Kompilované jazyky jsou často vhodné pro výkonné aplikace, kde je důležitý výkon, zatímco interpretované jazyky jsou často vhodné pro rychlý vývoj a prototypování.</p>
+            </section>
+            <section id="vykon">
+                <h3>Výkon</h3>
+                <p>Kompilované a interpretované programovací jazyky přinášejí různé přístupy k vykonávání kódu a ovlivňují také výkon aplikací.</p>
+                <p>Kompilované jazyky, jako je C, C++ nebo Rust, procházejí procesem kompilace, během kterého se zdrojový kód překládá do strojového kódu určeného pro konkrétní platformu. Tento proces může trvat nějakou dobu, ale výsledný program je obvykle rychlejší a efektivnější, protože strojový kód byl optimalizován pro daný hardware. Kompilované jazyky jsou často vhodné pro aplikace, které vyžadují vysoký výkon nebo jsou náročné na paměť, jako jsou hry nebo operační systémy.</p>
+                <p>Na druhou stranu interpretované jazyky, jako je Python, JavaScript nebo Ruby, neprocházejí procesem kompilace do strojového kódu. Namísto toho se zdrojový kód interpretuje a provádí se řádek po řádku v reálném čase. To může vést k menší rychlosti a vyšší režii paměti, protože interpret musí být spuštěn k vykonání každé instrukce. Nicméně, interpretované jazyky jsou obvykle snadněji čitelné a psaní kódu v nich může být rychlejší a pohodlnější.</p>
+                <p>Kompilované jazyky jsou často preferované pro aplikace s vysokým výkonem a nízkou úrovní, zatímco interpretované jazyky se často používají pro rychlý vývoj a prototypování aplikací. Nicméně, moderní technologie, jako jsou JIT (Just-In-Time) kompilátory, mohou přinést hybridní přístup, který kombinuje výhody obou metod, což umožňuje interpretovaným jazykům dosahovat vyššího výkonu. Každý přístup má své výhody a nevýhody, a volba mezi kompilovanými a interpretovanými jazyky závisí na konkrétních potřebách a cílích projektu.</p>
+            </section>
+            <section id="zacatecnicke">
+                <h3>Vhodné pro začátečníky</h3>
+                <p>Výběr programovacího jazyka pro začátečníky může být klíčovým rozhodnutím, které ovlivní jejich začátečnickou zkušenost a následný vývoj v programování. Existuje několik faktorů, které je třeba zvážit při rozhodování:</p>
+                <ol>
+                    <li><strong>Snadnost učení:</strong> Pro začátečníky je důležité vybrat jazyk s jednoduchou syntaxí a koncepty, které jsou snadno pochopitelné. Jazyky jako Python, JavaScript nebo Ruby jsou často doporučovány pro svou přívětivou syntaxi a bohaté množství dostupných zdrojů pro učení.</li>
+                    <li><strong>Široká dostupnost materiálů:</strong> Dobrý programovací jazyk pro začátečníky by měl mít bohaté množství učebních materiálů, tutoriálů a komunitní podpory. Populární jazyky jako Python mají obvykle mnoho zdrojů pro začátečníky, včetně knih, online kurzů a diskuzních fór.</li>
+                    <li><strong>Univerzálnost:</strong> Vybrání jazyka, který je univerzální a nachází uplatnění ve více oblastech, může být pro začátečníky výhodné. Python je často doporučován pro svou širokou škálu použití, od webových aplikací a datové analýzy po umělou inteligenci a vývoj her.</li>
+                    <li><strong>Zaměření na zájmy:</strong> Je vhodné zvážit zájmy a cíle začátečníka v programování. Například, pokud je zájem o vývoj mobilních aplikací, může být vhodné začít s jazykem jako Kotlin pro Android nebo Swift pro iOS.</li>
+                    <li><strong>Komunita a podpora:</strong> Programování je často kolektivním úsilím, a proto je důležité vybrat jazyk s aktivní komunitou a dobrou podporou. To znamená, že začátečníci mohou získat pomoc a sdílet své zkušenosti s ostatními programátory.</li>
+                </ol>
+                <p>Výběr programovacího jazyka pro začátečníky by měl být založen na těchto faktorech a měl by odpovídat individuálním potřebám a preferencím každého jednotlivce. Důležité je také pamatovat na to, že většina základních konceptů programování je přenosná mezi různými jazyky, takže se začátečníci mohou později naučit i další jazyky, jakmile získají základní znalosti a dovednosti.</p>
+            </section>
+            <footer>
+                <p>Zdroj: ChatGPT 3.5 | <a href="">Prompt Historie</a></p>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="page-footer">
+        <p>Školní projekt WEB - Programovací jazyky | Filip Groh</p>
+    </footer>
+</body>
+</html>

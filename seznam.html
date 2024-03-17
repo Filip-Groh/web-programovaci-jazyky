@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"> 
+    <title>Programovací jazyky - Seznam</title>
+</head>
+<body>
+    <header>
+        <h1>Programovací Jazyky</h1>
+        <nav>
+            <menu class="main-menu">
+                <li class="main-menu-button">
+                    <a href="./index.html">Přehled</a>
+                </li>
+                <li class="main-menu-button">
+                    <a href="./vlastnosti.html">Vlastnosti</a>
+                </li>
+                <li class="main-menu-button">
+                    <a href="./rozrazeni.html">Rozřazení</a>
+                </li>
+                <li class="main-menu-button">
+                    <a href="./seznam.html" class="active">Seznam</a>
+                </li>
+            </menu>
+        </nav>        
+    </header>
+
+
+    <main>
+        <article>
+            <header>
+                <h2>Seznam populárních programovacích jazyků</h2>
+                <nav>
+                    <menu class="article-menu">
+                        <li>
+                            <a href="#nejpopularnejsi">Nejpopulárnější programovací jazyky</a>
+                        </li>
+                        <li>
+                            <a href="#mene-popularni">Méně populární programovací jazyky</a>
+                        </li>
+                    </menu>
+                </nav>
+            </header>
+            <section id="nejpopularnejsi">
+                <h3>Nejpopulárnější programovací jazyky</h3>
+                <table>
+                    <tr>
+                        <th>Jméno</th>
+                        <th>Ikona</th>
+                        <th>Typ</th>
+                        <th>Syntax</th>
+                        <th>Primární využití</th>
+                        <th>Unikátní vlastnost</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>
+                            <img src="./src/python-icon.svg" alt="Ikona Python programovacího jazyka" class="svg">
+                        </td>
+                        <td>Interpretovaný</td>
+                        <td>Dynamická, jednoduchá a čitelná syntaxe</td>
+                        <td>Obecný účel, webové aplikace, vědecké výpočty, umělá inteligence</td>
+                        <td>Silná podpora knihoven a frameworků, což umožňuje rychlý vývoj</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>
+                            <img src="./src/java-icon.svg" alt="Ikona Java programovacího jazyka" class="svg">
+                        </td>
+                        <td>Kompilovaný (do bytecode, který běží na JVM), ale zároveň i interpretovaný JVM</td>
+                        <td>Podobná syntaxi C++, ale s důrazem na objektově orientované programování</td>
+                        <td>Enterprise aplikace, mobilní aplikace (Android), webové aplikace</td>
+                        <td>Platformová nezávislost díky JVM</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>
+                            <img src="./src/js-icon.svg" alt="Ikona JS programovacího jazyka" class="svg">
+                        </td>
+                        <td>Interpretovaný</td>
+                        <td>Dynamická a slabě typovaná syntaxe</td>
+                        <td>Webové aplikace (front-end i back-end), mobilní aplikace, desktopové aplikace</td>
+                        <td>Široké použití v prohlížečích, stává se stále populárnějším i mimo prohlížeče díky Node.js</td>
+                    </tr>
+                    <tr>
+                        <td>C / C++</td>
+                        <td>
+                            <img src="./src/cpp-icon.svg" alt="Ikona C++ programovacího jazyka" class="svg">
+                        </td>
+                        <td>C je obvykle kompilovaný, zatímco C++ je kompilovaný, ale také podporuje interpretaci v některých případech.</td>
+                        <td>Pro C podobná jazyku C, pro C++ rozšířená syntaxe s důrazem na objektově orientované programování</td>
+                        <td>Systémové programování, herní vývoj, embedded systémy, vysoký výkon</td>
+                        <td>Úroveň přístupu k paměti, vysoký výkon, široká použitelnost</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>
+                            <img src="./src/c-sharp-icon.svg" alt="Ikona C# programovacího jazyka" class="svg">
+                        </td>
+                        <td>Kompilovaný (do mezikódu, který běží na .NET runtime)</td>
+                        <td>Podobná syntaxi Javy s důrazem na objektově orientované programování</td>
+                        <td>Desktopové aplikace, webové aplikace, hry, mobilní aplikace (především s Xamarinem)</td>
+                        <td>Integrace s .NET frameworkem, podpora pro různé platformy pomocí .NET Standard</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="mene-popularni">
+                <h3>Méně populární programovací jazyky</h3>
+                <table>
+                    <tr>
+                        <th>Jméno</th>
+                        <th>Ikona</th>
+                        <th>Typ</th>
+                        <th>Syntax</th>
+                        <th>Primární využití</th>
+                        <th>Unikátní vlastnost</th>
+                    </tr>
+                    <tr>
+                        <td>Rust</td>
+                        <td>
+                            <img src="./src/rust-icon.svg" alt="Ikona Rust programovacího jazyka" class="svg">
+                        </td>
+                        <td>Kompilovaný</td>
+                        <td>Staticky typovaná s důrazem na bezpečnost a výkon</td>
+                        <td>Systémové programování, vysoký výkon, paralelní a asynchronní programování</td>
+                        <td>Bezpečnostní mechanismy zabudované do jazyka, jako je například "borrow checker"</td>
+                    </tr>
+                    <tr>
+                        <td>Haskell</td>
+                        <td>
+                            <img src="./src/haskell-icon.svg" alt="Ikona Haskell programovacího jazyka" class="svg">
+                        </td>
+                        <td>Kompilovaný</td>
+                        <td>Funkcionální, silně typovaná syntaxe s důrazem na čistotu funkcí</td>
+                        <td>Funkcionální programování, matematické výpočty, akademický výzkum</td>
+                        <td>Použití lenivého vyhodnocování a silné podpory pro monády</td>
+                    </tr>
+                    <tr>
+                        <td>Kotlin</td>
+                        <td>
+                            <img src="./src/kotlin-icon.svg" alt="Ikona Kotlin programovacího jazyka" class="svg">
+                        </td>
+                        <td>Kompilovaný (do bytecode, který běží na JVM nebo jako nativní kód)</td>
+                        <td>Podobná syntaxi Javy s množstvím moderních funkcí</td>
+                        <td>Android vývoj, serverový vývoj, multiplatformní vývoj</td>
+                        <td>100% interoperabilita s Javou, moderní jazykové prvky jako rozšíření pro Android vývojáře</td>
+                    </tr>
+                    <tr>
+                        <td>Swift</td>
+                        <td>
+                            <img src="./src/swift-icon.svg" alt="Ikona Swift programovacího jazyka" class="svg">
+                        </td>
+                        <td>Kompilovaný</td>
+                        <td>Moderní syntaxe s důrazem na bezpečnost a výkon</td>
+                        <td>Vývoj aplikací pro iOS, macOS, watchOS, tvOS</td>
+                        <td>Bezpečnostní prvky jako optionals, type inference, vysoký výkon díky optimalizacím kompilátoru</td>
+                    </tr>
+                    <tr>
+                        <td>Elixir</td>
+                        <td>
+                            <img src="./src/elixir-icon.svg" alt="Ikona Elixir programovacího jazyka" class="svg">
+                        </td>
+                        <td>Interpretovaný (bez nutnosti předkompilace)</td>
+                        <td>Funkcionální, dynamicky typovaná syntaxe podobná jazyku Ruby</td>
+                        <td>Paralelní a distribuované programování, webové aplikace</td>
+                        <td>Použití actor modelu a schopnost efektivního zpracování paralelních úloh pomocí Erlang VM.</td>
+                    </tr>
+                </table>
+            </section>
+            <footer>
+                <p>Zdroj: ChatGPT 3.5 | <a href="https://chat.openai.com/share/0ea80b94-1aeb-4c65-a5ad-19a7414048c4">Prompt Historie</a></p>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="page-footer">
+        <p>Školní projekt WEB - Programovací jazyky | Filip Groh</p>
+    </footer>
+</body>
+</html>
